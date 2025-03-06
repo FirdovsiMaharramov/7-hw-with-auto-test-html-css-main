@@ -21,7 +21,7 @@ let arr =[12,34,45,45,67,89,0]
 function findUniqueElements(arr) {
 
 const newarr=[... Set(arr)];
-console.log(newarr);
+return newarr;
 
 
 
