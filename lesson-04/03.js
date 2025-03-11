@@ -20,7 +20,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 function findCommonElements(arr1,arr2) {
     let common=[];
     for(let i=0;i<arr1.length;i++){
-        if(arr2.indexof(arr1[i])!==-1){
+        if(arr2.indexOf(arr1[i])!==-1){
             common.push(arr1[i]);
         }
     }
