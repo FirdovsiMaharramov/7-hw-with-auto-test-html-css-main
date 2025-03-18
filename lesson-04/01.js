@@ -14,9 +14,6 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
 function includesElement(arr1,per) {
-    let includes=;
-    for(let i=0; i<arr1.length;i++){
-        if()
-    }
+ 
     
 }
