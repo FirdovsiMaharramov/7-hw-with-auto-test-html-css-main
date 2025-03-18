@@ -18,7 +18,7 @@ function includesElement(arr1,per) {
     for(let i=0;i<arr1.length;i++){
         if(per==arr1[i]){
             return true;
-            arr1[i++];
+            
         }
         else {
             return false;
@@ -27,3 +27,4 @@ function includesElement(arr1,per) {
  
     
 }
+console.log(includesElement(arr1,per))
