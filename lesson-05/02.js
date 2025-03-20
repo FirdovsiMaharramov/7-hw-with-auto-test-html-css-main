@@ -1,33 +1,21 @@
-/*
-Напишите функцию `updateGallery`, которая будет обновлять информацию о произведениях искусства в виртуальной галерее. Функция должна принимать три параметра:
+const game = {
+  resources: {
+    gold: 250,
+    lumber: 100,
+  },
+  addResource(resource, amount) {
+    if (this.resources.hasOwnProperty(resource)) {
+      this.resources[resource] += amount;
+    } else {
+      console.log("Invalid resource");
+    }
+  }
+};
 
-- объект галереи
-- название произведения (ключ)
-- новое значение
-
-Если произведение с таким названием уже есть в галерее, его значение должно быть обновлено. Если произведения нет, оно должно быть добавлено в объект галерею.
-
-Пример использования функции:
-
-const gallery = {
-  'Mona Lisa': 'Leonardo da Vinci',
-  'Starry Night': 'Vincent van Gogh',
-  'The Scream': 'Edvard Munch'
-}
-
-updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
-updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
-
-console.log(gallery)
-
-Ожидаемый вывод:
-{
-  'Mona Lisa': 'Leonardo da Vinci, 1503-1506',
-  'Starry Night': 'Vincent van Gogh',
-  'The Scream': 'Edvard Munch',
-  'The Persistence of Memory': 'Salvador Dali'
-}
-*/
+// Примеры использования:
+game.addResource("gold", 50);  // Увеличит золото на 50
+console.log(game.resources.gold); // 300
+game.addResource("stone", 30); // "Invalid resource"
 
 const gallery = {
   'Mona Lisa': 'Leonardo da Vinci',
@@ -35,4 +23,12 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(gallery, title, newValue) {
+  gallery[title] = newValue;
+}
+
+// Примеры использования:
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+
+console.log(gallery);
