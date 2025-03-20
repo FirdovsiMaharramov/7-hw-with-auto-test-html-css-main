@@ -12,20 +12,3 @@
 Пример использования:
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
-let arr1 =[9,12,45,67,70,0];
-let per =0;
-function includesElement(arr1,per) {
-    for(let i=0;i<arr1.length;i++){
-        
-    }
-    if(arr1[]==per){
-        return true;
-        
-    }
-    else {
-        return false;
-    }
- 
-    
-}
-console.log(includesElement(arr1,per))
